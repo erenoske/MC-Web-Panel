@@ -1,40 +1,21 @@
-# Mc web panel
+# Minecraft Web Paneli
 
-Bu README dosyası, proje hakkında temel bilgileri içeren bir açıklama sunmaktadır.
-
-## Kullanılan Kütüphaneler ve Bağımlılıklar
-
-- express
-- Rcon
-- child_process
-- mysql
-- dotenv
-- express-rate-limit
-- fs
-- path
-- http
-- socket.io
-- express-session
-- mc-ping-updated
-- ejs
-- multer
-- adm-zip
+Bu proje, bir Minecraft sunucusunun yönetimi için bir web paneli sağlar. Proje Node.js ve npm gerektirir ve MySQL veritabanı kullanır.
 
 ## Kurulum
 
-1. Bu projeyi klonlayın: `git clone <repo-link>`
-2. Ana dizine gidin: `cd <project-folder>`
-3. Bağımlılıkları yükleyin: `npm install`
-4. Projeyi başlatın: `npm start`
+git clone <repo-link> && cd <project-folder> && npm install && echo "DB_HOST=veritabanı_sunucu_adresi\nDB_USER=veritabanı_kullanıcı_adı\nDB_PASSWORD=veritabanı_parolası\nDB_NAME=veritabanı_adi" > .env && npm start
 
-## Kullanım
+Proje'yi başlatmak için yukarıdaki komutu kullanın. Web paneline erişmek için tarayıcınızda `http://localhost` adresini ziyaret edin.
 
-Proje başlatıldığında, localhost'ta erişebilirsiniz. Bu, projeyle etkileşimde bulunabileceğiniz bir web arayüzü sunar.
 
-## Katkıda Bulunma
+## İletişim
 
-1. Bu projeyi klonlayın: `git clone <repo-link>`
-2. Yeni bir dal oluşturun: `git checkout -b yeni-dal`
-3. Değişikliklerinizi yapın ve bunları taahhüt edin: `git commit -m "Açıklama"`
-4. Dalınızı ana dala birleştirin: `git merge yeni-dal`
-5. Değişiklikleri ana repo'ya gönderin: `git push origin ana-dal`
+Bana [e-posta adresi] üzerinden ulaşabilirsiniz.
+
+
+Yukarıdaki kod satırı, projenin klonlanmasını, gerekli bağımlılıkların yüklenmesini, .env dosyasının oluşturulmasını, projenin başlatılmasını ve iletişim bilgilerinin verilmesini tek bir satırda gerçekleştirir.
+
+Lütfen `<repo-link>`, `<project-folder>`, `veritabanı_sunucu_adresi`, `veritabanı_kullanıcı_adı`, `veritabanı_parolası`, `veritabanı_adi`, `<proje lisansını belirtin>`, `[e-posta adresi]` gibi yer tutucu bilgileri kendi projenizin bilgileriyle değiştirmeniz gerekmektedir.
+
+Umarım bu size yardımcı olur!
