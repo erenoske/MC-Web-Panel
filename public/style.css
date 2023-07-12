@@ -62,7 +62,6 @@
   .loading {
     display: none;
   }
-  
   .loading.visible {
     display: block;
   }
