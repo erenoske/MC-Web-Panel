@@ -1,7 +1,7 @@
 {
   "name": "mc-server-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple minecraft web server",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
