@@ -86,9 +86,5 @@ git merge yeni-dal
 5. Değişiklikleri ana repo'ya gönderin:
 git push origin ana-dal
 
-## İletişim
-
-Eğer proje hakkında sorularınız, önerileriniz veya geri bildirimleriniz varsa, bana erenisgoren@gmail.com üzerinden ulaşabilirsiniz.
-
 Umarım bu size yardımcı olur!
 
