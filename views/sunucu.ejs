@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Dashboard | Graindashboard UI Kit</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="public/img/favicon.ico">
+
+
+    <!-- DEMO CHARTS -->
+    <link rel="stylesheet" href="public/demo/chartist.css">
+    <link rel="stylesheet" href="public/demo/chartist-plugin-tooltip.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Template -->
+    <link rel="stylesheet" href="public/graindashboard/css/graindashboard.css">
+
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header bg-body">
+    <nav class="navbar flex-nowrap p-0">
+        <div class="navbar-brand-wrapper d-flex align-items-center col-auto">
+            <!-- Logo For Mobile View -->
+            <a class="navbar-brand navbar-brand-mobile" href="/">
+                <img class="img-fluid w-100" src="public/img/logo-mini.png" alt="Graindashboard">
+            </a>
+            <!-- End Logo For Mobile View -->
+
+            <!-- Logo For Desktop View -->
+            <a class="navbar-brand navbar-brand-desktop" href="/">
+                <img class="side-nav-show-on-closed" src="public/img/logo-mini.png" alt="Graindashboard" style="width: auto; height: 33px;">
+                <img class="side-nav-hide-on-closed" style="width: 100%;" src="public/img/erenoske.png" alt="Graindashboard" style="width: auto; height: 33px;">
+            </a>
+            <!-- End Logo For Desktop View -->
+        </div>
+        <div class="header-content col px-md-3">
+            <div class="d-flex align-items-center">
+                <!-- Side Nav Toggle -->
+                <a class="js-side-nav header-invoker d-flex mr-md-2" href="#" data-close-invoker="#sidebarClose" data-target="#sidebar" data-target-wrapper="body">
+                    <i class="gd-align-left"></i>
+                </a>
+                <!-- End Side Nav Toggle -->
+
+                <!-- User Notifications -->
+                <div class="dropdown ml-auto">
+                </div>
+                <!-- End User Notifications -->
+                <!-- User Avatar -->
+                <div class="dropdown mx-3 dropdown ml-2">
+                    <a id="profileMenuInvoker" class="header-complex-invoker" href="#" aria-controls="profileMenu" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#profileMenu" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-animation-in="fadeIn" data-unfold-animation-out="fadeOut">
+                        <!--img class="avatar rounded-circle mr-md-2" src="#" alt="John Doe"-->
+                        <!--<span class="mr-md-2 avatar-placeholder">J</span>-->
+                        <span class="d-none d-md-block"><%= username %></span>
+                        <i class="gd-angle-down d-none d-md-block ml-2"></i>
+                    </a>
+
+                    <ul id="profileMenu" class="unfold unfold-user unfold-light unfold-top unfold-centered position-absolute pt-2 pb-1 mt-4 unfold-css-animation unfold-hidden fadeOut" aria-labelledby="profileMenuInvoker" style="animation-duration: 300ms;">
+                       <!-- <li class="unfold-item">
+                            <a class="unfold-link d-flex align-items-center text-nowrap" href="#">
+                    <span class="unfold-item-icon mr-3">
+                      <i class="gd-user"></i>
+                    </span>
+                                My Profile
+                            </a>
+                        </li> -->
+                        <li class="unfold-item unfold-item-has-divider">
+                            <a class="unfold-link d-flex align-items-center text-nowrap" href="logout">
+                    <span class="unfold-item-icon mr-3">
+                      <i class="gd-power-off"></i>
+                    </span>
+                                Çıkış Yap
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End User Avatar -->
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+    <!-- Sidebar Nav -->
+    <aside id="sidebar" class="js-custom-scroll side-nav">
+        <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+            <!-- Title -->
+            <li class="sidebar-heading h6">Sunucular</li>
+            <!-- End Title -->
+
+            <!-- Dashboard -->
+            <li class="side-nav-menu-item active">
+                <a class="side-nav-menu-link media align-items-center" href="/">
+              <span class="side-nav-menu-icon d-flex mr-3">
+                <i class="gd-dashboard"></i>
+              </span>
+                    <span class="side-nav-fadeout-on-closed media-body">Sunucular</span>
+                </a>
+            </li>
+            <!-- Documentation -->
+            <li class="side-nav-menu-item">
+                <a class="side-nav-menu-link media align-items-center" href="/createserver">
+              <span class="side-nav-menu-icon d-flex mr-3">
+                <i class="gd-file"></i>
+              </span>
+                    <span class="side-nav-fadeout-on-closed media-body">Sunucu Oluştur</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- End Sidebar Nav -->
+
+    <div class="content">
+        <div class="py-4 px-3 px-md-4">
+            <div class="mb-3 mb-md-4 d-flex justify-content-between">
+                <div class="h5 mb-0">IP:195.174.64.15</div>
+                <div class="h5 mb-0"><%= title %></div>
+            </div>
+              <pre style="margin-bottom: 0px;" id="log-content"></pre>
+              <div id="background">
+                <span id="status"></span>
+                <div id="loading" class="loading"></div>
+              </div>
+              <form action="/sunucuekle" method="POST">
+               <div class="flex-cont">
+                <button type="button" id="button" style="background-color: #2d3943; border: none; border-radius: 0px; height: 46.16px" class="btn btn-primary"></button>
+                <input type="text"  class="form-control" name="komut" placeholder="Komut girin..." />
+               </div>
+              </form>
+              <form id="controlForm">
+                <center>
+                 
+                </center>
+              </form>
+              <br>
+              <div class="h5 mb-0">Sunucu Ayarları</div>
+              <textarea class="txt" id="content"></textarea>
+              <button style="background-color: #2d3943; border: none; border-radius: 0px; height: 46.16px" class="btn btn-primary" onclick="saveContent()">Kaydet</button>
+              <br><br><br>
+              <div class="h5 mb-0">Mod Yükle</div>
+              <form id="uploadForm" enctype="multipart/form-data">
+                <input type="hidden" id="url-id" name="id" value="" />
+                <input type="file" name="file" />
+                <button type="submit" style="background-color: #2d3943; border: none; border-radius: 0px; height: 46.16px" class="btn btn-primary">Yükle</button>
+              </form>
+              <a href="" id="mods" target="_blank">modları görüntüle</a><br><br>
+              <a href="" id="download"  target="_blank">Modları indir</a>
+              <div class="bosluk"></div>
+        </div>
+    </div>
+</main>
+
+
+<script src="public/graindashboard/js/graindashboard.js"></script>
+<script src="public/graindashboard/js/graindashboard.vendor.js"></script>
+
+<!-- DEMO CHARTS -->
+<script src="public/demo/resizeSensor.js"></script>
+<script src="public/demo/chartist.js"></script>
+<script src="public/demo/chartist-plugin-tooltip.js"></script>
+<script src="public/demo/gd.chartist-area.js"></script>
+<script src="public/demo/gd.chartist-bar.js"></script>
+<script src="public/demo/gd.chartist-donut.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+  
+<script src="main.js"></script>
+<script src="serverstatus.js"></script>
+
+<script>
+    $.GDCore.components.GDChartistArea.init('.js-area-chart');
+    $.GDCore.components.GDChartistBar.init('.js-bar-chart');
+    $.GDCore.components.GDChartistDonut.init('.js-donut-chart');
+</script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    const link = document.getElementById('mods');
+    const idİnput = document.getElementById('url-id');
+    const download = document.getElementById('download');
+
+    download.href = `download?id=${id}`
+    idİnput.value = id;
+
+    link.href = `mods?id=${id}`;
+  </script>
+</body>
+</html>

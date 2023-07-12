@@ -1,0 +1,93 @@
+#log-content
+{
+   height: 300px;
+   overflow: auto;
+   background-color: #2d3943;
+   color: rgb(184, 184, 184);
+   padding: 10px;
+   display: flex;
+   flex-direction: column-reverse;
+}
+.flex-cont
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+.server-offline {
+    background-color: #f62451;
+    color: azure;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  .server-online {
+    background-color: #1fd78d;
+    color: azure;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  .hide 
+  {
+    margin-top: 5px;
+    display: hide;
+  }
+  .block
+  {
+    margin-top: 5px;
+    display: block;
+  }
+  .loading
+  {
+    background: url(./public/img/loading.gif) no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    display: inline-block;
+  }
+  .loading {
+    display: none;
+  }
+  
+  .loading.visible {
+    display: block;
+  }
+  .loadingP
+  {
+    display: inline-block;
+  }
+  pre 
+  {
+    white-space: pre-wrap;
+  }
+  .txt
+  {
+    width: 100%;
+    border: none;
+    height: 50%;
+    resize: none;
+    overflow: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2d3943;
+    color: rgb(184, 184, 184);
+  }
+  .bosluk 
+  {
+    width: 100%;
+    height: 100px;
+  }
