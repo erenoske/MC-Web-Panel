@@ -42,7 +42,7 @@ You can follow the steps below to run the project on your local machine.
 
 ### Installation
 
-1. Clone the project to your local machine: `git clone <repo-link>`
+1. Clone the project to your local machine: `git clone [<repo-link>](https://github.com/erenoske/MC-Web-Panel)`
 2. Navigate to the project directory: `cd <project-folder>`
 3. Install the required dependencies: `npm install`
 4. Configure the database connection settings: Create a file named `.env` and add the following lines:
@@ -173,7 +173,7 @@ Please note that you may need to adjust the instructions based on your specific 
 
 If you would like to contribute to the project, you can follow these steps:
 
-1. Clone the project: `git clone <repo-link>`
+1. Clone the project: `git clone [<repo-link>](https://github.com/erenoske/MC-Web-Panel)`
 2. Create a new branch: `git checkout -b new-branch`
 3. Make your changes and commit them: `git commit -m "Description"`
 4. Merge your branch into the main branch: `git merge new-branch`
