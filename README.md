@@ -1,29 +1,28 @@
-# Minecraft Web Paneli
+# Minecraft Web Panel
 
-Bu proje, bir Minecraft sunucusunun yönetimi için bir web paneli sağlar. Panel aracılığıyla sunucuyu başlatabilir, durdurabilir, komutlar gönderebilir ve diğer işlemleri gerçekleştirebilirsiniz.
+This project provides a web panel for managing a Minecraft server. Through the panel, you can start, stop, send commands, and perform other operations on the server.
 
-## Özellikler
+## Features
 
-- Sunucunun durumunu izleme ve kontrol etme
-- Sunucuyu başlatma ve durdurma
-- Oyuncu listesini görüntüleme ve yönetme
-- Sunucuya komut gönderme
-- Sunucu dosyalarını yönetme
-- Mod dosyalarını yükleme ve yönetme
-- Kayıtları görüntüleme ve indirme
+- Monitor and control the status of the server
+- Start and stop the server
+- View and manage the player list
+- Send commands to the server
+- Manage server files
+- Upload and manage mod files
+- View and download logs
 
-## Başlangıç
+## Getting Started
 
-Aşağıdaki adımları takip ederek projeyi yerel makinenizde çalıştırabilirsiniz.
+You can follow the steps below to run the project on your local machine.
 
-### Gereksinimler
+### Requirements
 
 - Node.js
 - npm
-- MySQL veritabanı
+- MySQL database
 
-
-## Kullanılan Kütüphaneler ve Bağımlılıklar
+### Libraries and Dependencies Used
 
 - express
 - Rcon
@@ -41,50 +40,39 @@ Aşağıdaki adımları takip ederek projeyi yerel makinenizde çalıştırabili
 - multer
 - adm-zip
 
-### Kurulum
+### Installation
 
-1. Projeyi yerel makinenize klonlayın:
-git clone <repo-link>
-2. Proje dizinine gidin:
-cd <project-folder>
-3. Gerekli bağımlılıkları yükleyin:
-npm install
-4. Veritabanı bağlantı ayarlarını yapılandırın:
-DOSYA: .env
+1. Clone the project to your local machine: `git clone <repo-link>`
+2. Navigate to the project directory: `cd <project-folder>`
+3. Install the required dependencies: `npm install`
+4. Configure the database connection settings: Create a file named `.env` and add the following lines:
+DB_HOST=<database-server-address>
+DB_USER=<database-username>
+DB_PASSWORD=<database-password>
+DB_NAME=<database-name>
+5. Start the project: `npm start`
+6. Access the web panel in your browser by going to `http://localhost`
 
-DB_HOST=veritabanı_sunucu_adresi
-DB_USER=veritabanı_kullanıcı_adı
-DB_PASSWORD=veritabanı_parolası
-DB_NAME=veritabanı_adi
-5. Proje'yi başlatın:
-npm start
-6. Web paneline erişmek için tarayıcıda `http://localhost` adresine gidin.
+## Usage
 
-## Kullanım
+1. Access the web panel at `http://localhost`
+2. Log in or create a new account
+3. Add your servers or manage existing servers
+4. Monitor server status, send commands, and perform other operations
 
-1. Web paneline erişin `http://localhost`.
-2. Giriş yapın veya yeni bir hesap oluşturun.
-3. Sunucularınızı ekleyin veya mevcut sunucularınızı yönetin.
-4. Sunucu durumunu izleyin, komut gönderin ve diğer işlemleri gerçekleştirin.
+## Database
 
-## Veritabanı
+The project uses a MySQL database. The database schema and sample data can be found in the file `etic.sql`.
 
-Proje, MySQL veritabanı kullanmaktadır. Veritabanı şeması ve örnek verileri `etic.sql` adında bir dosyada bulunmaktadır.
+## Contribution
 
-## Katkıda Bulunma
+If you would like to contribute to the project, you can follow these steps:
 
-Eğer projeye katkıda bulunmak isterseniz, aşağıdaki adımları takip edebilirsiniz:
+1. Clone the project: `git clone <repo-link>`
+2. Create a new branch: `git checkout -b new-branch`
+3. Make your changes and commit them: `git commit -m "Description"`
+4. Merge your branch into the main branch: `git merge new-branch`
+5. Push the changes to the origin repository: `git push origin main`
 
-1. Bu projeyi klonlayın:
-git clone <repo-link>
-2. Yeni bir dal oluşturun:
-git checkout -b yeni-dal
-3. Değişikliklerinizi yapın ve bunları taahhüt edin:
-git commit -m "Açıklama"
-4. Dalınızı ana dala birleştirin:
-git merge yeni-dal
-5. Değişiklikleri ana repo'ya gönderin:
-git push origin ana-dal
-
-Umarım bu size yardımcı olur!
+I hope this helps!
 
