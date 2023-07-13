@@ -23,24 +23,6 @@ You can follow the steps below to run the project on your local machine.
 - MySQL database
 - Windows Operating System
 
-### Libraries and Dependencies Used
-
-- express
-- Rcon
-- child_process
-- mysql
-- dotenv
-- express-rate-limit
-- fs
-- path
-- http
-- socket.io
-- express-session
-- mc-ping-updated
-- ejs
-- multer
-- adm-zip
-
 ### Installation
 
 1. Clone the project to your local machine: `git clone https://github.com/erenoske/MC-Web-Panel`
