@@ -169,6 +169,25 @@ Make sure to consult the Minecraft server documentation or official resources fo
 
 Please note that you may need to adjust the instructions based on your specific Minecraft server setup and requirements.
 
+## Starting the Minecraft Server with Custom RAM Allocation
+
+To start the Minecraft server with a custom amount of allocated RAM, follow these steps:
+
+   ```javascript
+   exec(`cd ${drive} && cd /d ${Directory} && java -Xmx4G -Xms4G -jar server.jar nogui`, (error, stdout, stderr) => {
+     // Code execution and error handling
+   });
+  ```
+1. In the code snippet above, the -Xmx4G flag specifies the maximum amount of RAM to allocate (4GB), and the -Xms4G flag specifies the initial amount of RAM to allocate (4GB).
+2. Adjust the -Xmx and -Xms values according to your desired RAM allocation. For example, -Xmx8G allocates 8GB of RAM, and -Xms2G allocates 2GB of RAM.
+3. Save the changes to the file.
+
+When you start the Minecraft server using the modified code, it will allocate the specified amount of RAM to the Java process. This can improve server performance and stability for larger Minecraft servers.
+
+Make sure to consider your system's available resources when adjusting the RAM allocation. Allocating too much RAM may cause performance issues or conflicts with other applications running on your system.
+
+Consult the Minecraft server documentation or official resources for more information on server optimization and RAM allocation settings.
+
 ## Contribution
 
 If you would like to contribute to the project, you can follow these steps:
