@@ -33,7 +33,7 @@ DB_HOST=<database-server-address>
 DB_USER=<database-username>
 DB_PASSWORD=<database-password>
 DB_NAME=<database-name>
-5. Start the project: `npm start`
+5. Start the project: `node index.js`
 6. Access the web panel in your browser by going to `http://localhost`
 
 ## Usage
