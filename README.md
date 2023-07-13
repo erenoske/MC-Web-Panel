@@ -21,6 +21,7 @@ You can follow the steps below to run the project on your local machine.
 - Node.js
 - npm
 - MySQL database
+- Windows Operating System
 
 ### Libraries and Dependencies Used
 
