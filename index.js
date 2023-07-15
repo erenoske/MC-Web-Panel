@@ -386,7 +386,7 @@ app.post('/server', Powerlimiter, (req, res) => {
 
 // HTTP sunucusunu dinleme
 http.listen(80, () => {
-  console.log('Sunucu dinleniyor: http://localhost:3000');
+  console.log('Sunucu dinleniyor: http://localhost');
 });
 
 
