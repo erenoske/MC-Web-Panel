@@ -51,10 +51,6 @@ The project uses a MySQL database. The database schema and sample data can be fo
 
 To check the status of a Minecraft server, the `checkServerStatus` function can be used. It uses the `mcPing` library to send a ping request to the server and determine its status.
 
-### Prerequisites
-
-- The `mcPing` library is required to be installed in your project. You can install it using `npm install mc-ping-updated`.
-
 ### Usage
 
 ```javascript
