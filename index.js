@@ -243,8 +243,7 @@ app.get("/login", (req, res) => {
 app.post('/komut', limiter, (req, res) => {
   const {serverName, selectedGame} = req.body;
   const username = req.session.username;
-  if(serverName == null)
-  {
+  if(serverName == null) {
    // RCON bağlantısını oluşturma
    const rcon = new Rcon(Rconhost, Rconport, Rconpassword);
    const command = req.body.komut;
