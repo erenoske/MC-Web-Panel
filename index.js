@@ -53,8 +53,6 @@ const Rconhost = '127.0.0.1'; //Sunucu İP Adresi
 const Rconport = 25575; //RCON port
 const Rconpassword = ''; //RCON şifre
 
-
-// Body-parser middleware'ini kullanmak için aşağıdaki satırı ekleyin
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // JSON verilerini işlemek için gerekli
 
